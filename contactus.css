@@ -214,6 +214,8 @@ body{
     .ul-navbar {
         flex-wrap: wrap;
         justify-content: center;
+		position: static;
+		transform: none;
     }
 
     .div-navbar-mini {
