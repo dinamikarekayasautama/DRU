@@ -282,6 +282,13 @@ body{
         align-content: flex-start;
         padding: 15px 20px;
         row-gap: 10px;
+		flex-direction: column;
+    }
+
+	.img-navbar {
+        position: static;   
+        left: auto;
+        margin: 0;
     }
 
     .ul-navbar {
@@ -290,6 +297,11 @@ body{
 		position: static;
 		transform: none;
 		animation: slideInDownMobile 1.2s ease;
+    }
+
+	.p-navbar {
+        position: static;   
+        right: auto;
     }
 
     .div-navbar-mini {
