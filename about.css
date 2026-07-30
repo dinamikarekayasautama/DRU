@@ -289,7 +289,7 @@ body{
         justify-content: center;
 		position: static;
 		transform: none;
-		animation: slideInDownMobile 1.2s ease
+		animation: slideInDownMobile 1.2s ease;
     }
 
     .div-navbar-mini {
