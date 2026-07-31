@@ -296,12 +296,12 @@ body{
         justify-content: center;
 		  position: static;
 		  transform: none;
-		animation: slideInLeftMobile 1.2s ease;
+		animation: slideInLeft 1.2s ease;
     }
 
 	.p-navbar {
 		position: static; 
-		animation: slideInLeftMobile 1.2s ease;
+		animation: slideInLeft 1.2s ease;
 	}
 
     .div-navbar-mini {
@@ -315,7 +315,7 @@ body{
         justify-content: stretch;  
         flex-wrap: nowrap;
     	list-style-type: none;
-    	animation: slideInLeftMobile 1.2s ease;
+    	animation: slideInLeft 1.2s ease;
 		border: none;             
         border-radius: 0;
 	}
@@ -356,14 +356,5 @@ body{
 		flex-wrap: wrap;
 	}
 }
-
-@keyframes slideInLeftMobile {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    
 }
