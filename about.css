@@ -320,12 +320,14 @@ body{
 	}
 
 	.li-navbar-mini {
-		border: 1px solid #ccc;
-		border-radius: 0px;
-		padding: 10px 5px;
-        margin: 0;    
-		flex: 1;     
+    	flex: 1;
+    	padding: 10px;      
+    	margin: 0;
+    	text-align: center;
+    	border: 1px solid #ccc;
+    	border-radius: 0;
 	}
+
 
 	.li-navbar-mini:hover {
 		background-color: gainsboro;
