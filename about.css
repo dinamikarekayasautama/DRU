@@ -122,6 +122,8 @@ body{
 .a-navbar-mini {
     text-decoration: none;
     color: black; 
+	display: flex;
+	justify-content: center;
 }
 
 .div-content {
