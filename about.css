@@ -299,10 +299,6 @@ body{
 		animation: slideInDownMobile 1.2s ease;
     }
 
-	.li-navbar-mini {
-   		padding: 5px;
-	}
-
 	.p-navbar {
 		position: static; 
 	}
@@ -310,6 +306,24 @@ body{
     .div-navbar-mini {
         flex-wrap: wrap;
     }
+
+	.ul-navbar-mini {
+    	display: flex;
+		justify-content: space-between;
+    	list-style-type: none;
+    	animation: slideInDownMini 1.2s ease;
+	}
+
+	.li-navbar-mini {
+   		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 50px;
+	}
+
+	.li-navbar-mini:hover {
+		background-color: gainsboro;
+     	transition: 0.5s ease-in-out;
+	}
 
     .div-content {
         margin-left: 15px;
