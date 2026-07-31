@@ -169,6 +169,7 @@ body{
 @media (max-width: 768px) {
     body {
         min-height: 100vh;
+		font-size: 15px;
     }
 
     .div-navbar {
