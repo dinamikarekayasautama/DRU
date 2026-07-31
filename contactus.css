@@ -217,6 +217,7 @@ body{
         justify-content: center;
 			position: static;
 		  transform: none;
+		animation: slideInDownMobile 1.2s ease;
     }
 
     .div-navbar-mini {
@@ -233,4 +234,15 @@ body{
 		display: flex;
 		justify-content: space-between;
 	}
+}
+
+@keyframes slideInDownMobile {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
