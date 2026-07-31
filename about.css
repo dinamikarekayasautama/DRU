@@ -312,12 +312,14 @@ body{
 		justify-content: space-between;
     	list-style-type: none;
     	animation: slideInDownMini 1.2s ease;
+		border: none;             
+        border-radius: 0;
 	}
 
 	.li-navbar-mini {
    		padding: 10px;
 		border: 1px solid #ccc;
-		border-radius: 50px;
+		border-radius: 0px;
 	}
 
 	.li-navbar-mini:hover {
