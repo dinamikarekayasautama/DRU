@@ -106,12 +106,12 @@ body{
 	 justify-content: space-between;
     list-style-type: none;
     animation: slideInDownMini 1.2s ease;
+	 border: 1px solid #ccc;
+	 border-radius: 50px;
 }
 
 .li-navbar-mini {
     padding: 20px;
-    border: 1px solid #ccc;
-	 border-radius: 0px;
 }
 
 .li-navbar-mini:hover {
