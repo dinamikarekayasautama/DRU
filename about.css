@@ -300,10 +300,7 @@ body{
     }
 
 	.li-navbar-mini {
-   		padding-top: 1px;
-		padding-bottom: 1px;
-		padding-left: 0.5px;
-		padding-right: 0.5px;
+   		padding: 1px;
 	}
 
 	.p-navbar {
@@ -331,7 +328,7 @@ body{
         flex-direction: column;
 		justify-content: center;
         align-items: flex-start;
-		padding: 25px;
+		height: 1vh;
 		flex-wrap: wrap;
 	}
 }
