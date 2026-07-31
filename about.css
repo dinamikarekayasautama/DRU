@@ -300,7 +300,10 @@ body{
     }
 
 	.li-navbar-mini {
-   		padding: 0px;
+   		padding-top: 1px;
+		padding-bottom: 1px;
+		padding-left: 0.5px;
+		padding-right: 0.5px;
 	}
 
 	.p-navbar {
