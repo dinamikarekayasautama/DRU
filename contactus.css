@@ -198,6 +198,10 @@ body{
 }
 
 @media (max-width: 768px) {
+	body {
+        font-size: 10px;
+    }
+	
     .cover-navbar,
     .div-navbar {
         height: 32vh;
