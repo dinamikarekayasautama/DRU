@@ -299,6 +299,10 @@ body{
 		animation: slideInDownMobile 1.2s ease;
     }
 
+	.li-navbar-mini {
+   		padding: 10px;
+	}
+
 	.p-navbar {
 		position: static; 
 	}
