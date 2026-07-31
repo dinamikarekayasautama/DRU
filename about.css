@@ -276,11 +276,16 @@ body{
     }
 
     .div-navbar {
+		flex-direction: column;
         flex-wrap: wrap;
         align-content: flex-start;
         padding: 15px 20px;
         row-gap: 10px;
     }
+
+	.img-navbar {
+		position: static; 
+	}
 
     .ul-navbar {
         flex-wrap: wrap;
@@ -288,6 +293,10 @@ body{
 		  position: static;
 		  transform: none;
     }
+
+	.p-navbar {
+		position: static; 
+	}
 
     .div-navbar-mini {
         flex-wrap: wrap;
