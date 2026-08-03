@@ -308,13 +308,15 @@ body{
     .div-navbar-mini {
         flex-wrap: wrap;
 		padding: 0;
+		overflow-x: auto;              /* aktifkan scroll horizontal */
+		scrollbar-width: none;         /* sembunyikan scrollbar (Firefox) */
     }
 
 	.ul-navbar-mini {
     	display: flex;
         width: max-content;
         justify-content: stretch;  
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     	list-style-type: none;
     	animation: slideInLeft 1.2s ease;
 		border: none;             
@@ -322,7 +324,7 @@ body{
 	}
 
 	.li-navbar-mini {
-    	flex: 1;
+    	flex: none;
     	padding: 10px;      
     	margin: 0;
     	text-align: center;
