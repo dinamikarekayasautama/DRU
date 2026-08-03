@@ -307,11 +307,18 @@ body{
     .div-navbar-mini {
         flex-wrap: wrap;
 		padding: 0;
+		overflow-x: auto;              /* aktifkan scroll horizontal */
+        -webkit-overflow-scrolling: touch;  /* biar swipe-nya smooth di HP */
+        scrollbar-width: none;         /* sembunyikan scrollbar (Firefox) */
+    }
+
+	.div-navbar-mini::-webkit-scrollbar {
+        display: none;                 /* sembunyikan scrollbar (Chrome/Safari) */
     }
 
 	.ul-navbar-mini {
     	display: flex;
-        width: 100%;
+        width: max-content;
         justify-content: stretch;  
         flex-wrap: nowrap;
     	list-style-type: none;
@@ -321,12 +328,13 @@ body{
 	}
 
 	.li-navbar-mini {
-    	flex: 1;
-    	padding: 10px;      
+    	flex: none;
+    	padding: 15px;      
     	margin: 0;
     	text-align: center;
     	border: 1px solid #ccc;
     	border-radius: 0;
+		white-space: nowrap;           /* teks di dalam nggak boleh patah baris */
 	}
 
 
