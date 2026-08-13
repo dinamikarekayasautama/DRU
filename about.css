@@ -197,6 +197,10 @@ body{
     justify-content: center;
 }
 
+.isian-activities{
+    padding-left: 30px;
+}
+
 .div-footer {
     height: auto;
     display: flex;
