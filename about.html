@@ -63,7 +63,7 @@
     <!-- CONTENT -->
     <div class="div-content">
         <div class="pengenalan-content" id="tentang-kami">
-            <h1 class="j-content">About Us</h1>
+            <h2 class="j-content">About Us</h2>
             <br> 
             <p class="p-content">
                 PT Dinamika Rekayasa Utama began its business journey in 2010 under its original name, CV Dinamika Konstruksi. Since its establishment, the company has been committed to providing professional construction consulting and documentation services while building long-term partnerships founded on integrity, quality, and trust.
@@ -94,7 +94,7 @@
         <br> 
 
         <div class="team-content" id="tim-kami">
-            <h1 class="j-content">Our Team</h1>
+            <h2 class="j-content">Our Team</h2>
             <br>
             <div class="card-team">
                 <div class="p-team-content">
@@ -115,7 +115,7 @@
         <br>
 
         <div class="visimisi-content" id="visi-misi">
-            <h1 class="j-content">Vision & Mission</h1>
+            <h2 class="j-content">Vision & Mission</h2>
             <br>
             <h3 class="j-content">Vision :</h3>
             <p class="p-content">
@@ -142,7 +142,7 @@
             </p>
             <br> 
             <br> 
-            <h1 class="j-content" id="layanan-jasa">Services</h1>
+            <h2 class="j-content" id="layanan-jasa">Services</h2>
         </div>
 
         <br>
@@ -150,6 +150,7 @@
             <!-- bingkai card jasa dan layanan -->
             <div class="card-content1">
                 <div class="p-jasa-content">
+                    <img src="cover-jasa-1.jpg" class="img-jasa"/>
                     <i class="fa-solid fa-building-columns fa-3x"></i>
                     <h3 class="judul">
                         Permits & Licensing 
@@ -159,6 +160,7 @@
                     </p>
                 </div>
                 <div class="p-jasa-content">
+                    <img src="cover-jasa-2.jpg" class="img-jasa"/>
                     <i class="fa-solid fa-city fa-3x"></i>
                     <h3 class="judul">
                         Planning 
@@ -168,6 +170,7 @@
                     </p>
                 </div>
                 <div class="p-jasa-content">
+                    <img src="cover-jasa-3.jpg" class="img-jasa"/>
                     <i class="fa-solid fa-chart-line fa-3x"></i>
                     <h3 class="judul">
                         Supervision 
@@ -180,6 +183,7 @@
 
             <div class="card-content2">
                 <div class="p-jasa-content">
+                    <img src="cover-jasa-4.jpg" class="img-jasa"/>
                     <i class="fa-solid fa-magnifying-glass-chart fa-3x"></i>
                     <h3 class="judul">
                         Assessment 
@@ -189,6 +193,7 @@
                     </p>
                 </div>
                 <div class="p-jasa-content">
+                    <img src="cover-jasa-5.jpg" class="img-jasa"/>
                     <i class="fa-solid fa-screwdriver-wrench fa-3x"></i>
                     <h3 class="judul">
                         Maintenance 
@@ -198,6 +203,7 @@
                     </p>
                 </div>
                 <div class="p-jasa-content">
+                    <img src="cover-jasa-6.jpg" class="img-jasa"/>
                     <i class="fa-solid fa-chalkboard fa-3x"></i>
                     <h3 class="judul">
                         Value Engineering  
@@ -211,34 +217,31 @@
         <br>
         <br>
         <div class="activities">
-            <h1 class="j-content" id="activities">Activites</h1>
+            <h2 class="j-content" id="activities">Activites</h2>
             <br> 
-            <hr class="p-content"> 
-            <br>
-            <div class="isian-activities">
-                <h3 class="p-content">
-                Kajian Teknis The Peak Pekanbaru
-                </h3>
-                <p class="p-content">
-                    The Peak Pekanbaru project involved a structural assessment using the Pushover Analysis method to 
-                </p>
-                <p class="p-content">
-                    identify structural elements experiencing plasticity and provide recommendations for the necessary remedial...
-                </p>
-            </div>
-            <br> 
-            <hr class="p-content"> 
-            <br> 
-            <div class="isian-activities">
-                <h3 class="p-content">
-                Perencanaan RS Bhayangkara 
-                </h3>
-                <p class="p-content">
-                    This hospital features a distinctive Riau Malay Tanjak-inspired design, blending local cultural heritage with
-                </p>
-                <p class="p-content">
-                    modern architecture. However, the Tanjak-shaped structure presents a structural challenge due to its...
-                </p>
+            
+            <div class="card-activities">
+                <a href="planning.html" class="p-card-activities">
+                    <img src="cover-activities-1.jpg" class="img-activities"/>
+                    <h3>Planning</h3>
+                    <p>
+                        Engineering planning and design solutions for buildings, infrastructure, and other construction projects.
+                    </p>
+                </a>
+                <a href="assessment.html" class="p-card-activities">
+                    <img src="cover-activities-2.jpg" class="img-activities"/>
+                    <h3>Assessment</h3>
+                    <p>
+                        Structural assessment and evaluation services to support safety, performance, and reliability.
+                    </p>
+                </a>
+                <a href="liscensing.html" class="p-card-activities">
+                    <img src="cover-activities-3.jpg" class="img-activities"/>
+                    <h3>Licensing</h3>
+                    <p>
+                        Professional assistance in construction permits and regulatory documentation.
+                    </p>
+                </a>
             </div>
         </div>
     </div>
@@ -260,7 +263,7 @@
         });
     }, { threshold: 0.2 });
 
-    document.querySelectorAll('.p-content, .j-content, .p-jasa-content, .p-team-content').forEach(el => {
+    document.querySelectorAll('.p-content, .j-content, .p-jasa-content, .p-team-content, .p-card-activities').forEach(el => {
         observer.observe(el);
     });
 </script>
