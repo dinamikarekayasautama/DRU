@@ -155,6 +155,10 @@ body{
     margin: 50px;
 }
 
+.img-plan {
+    height: 80%;
+}
+
 .div-footer {
     height: auto;
     display: flex;
@@ -266,6 +270,14 @@ body{
     .div-content {
         margin-left: 15px;
         margin-right: 15px;
+    }
+
+    .p-content-isi {
+        flex-wrap: wrap;
+    }
+
+    .container-plan {
+        margin: 15px;
     }
 
 	.div-footer {
