@@ -316,6 +316,7 @@ body{
 .card-activities {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .p-card-activities {
