@@ -92,6 +92,28 @@
         </div>
         <br>
         <br> 
+
+        <div class="team-content" id="tim-kami">
+            <h1 class="j-content">Our Team</h1>
+            <br>
+            <div class="card-team">
+                <div class="p-team-content">
+                    <img src="direktur.jpg" class="foto-team" alt="Director">
+                    <h3 class="nama-team">Raja Dewi Kurnia</h3>
+                    <p class="jabatan-team">Director</p>
+                    <p class="bio-team">Short professional bio</p>
+                </div>
+                <div class="p-team-content">
+                    <img src="tenaga-ahli.jpg" class="foto-team" alt="Technical Expert">
+                    <h3 class="nama-team">Iskandar Romey Sitompul</h3>
+                    <p class="jabatan-team">Technical Expert</p>
+                    <p class="bio-team">Short professional bio</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
         <div class="visimisi-content" id="visi-misi">
             <h1 class="j-content">Vision & Mission</h1>
             <br>
@@ -122,6 +144,7 @@
             <br> 
             <h1 class="j-content" id="layanan-jasa">Services</h1>
         </div>
+
         <br>
         <div class="layanan-content" id="layanan-jasa">
             <!-- bingkai card jasa dan layanan -->
@@ -237,7 +260,7 @@
         });
     }, { threshold: 0.2 });
 
-    document.querySelectorAll('.p-content, .j-content, .p-jasa-content').forEach(el => {
+    document.querySelectorAll('.p-content, .j-content, .p-jasa-content, .p-team-content').forEach(el => {
         observer.observe(el);
     });
 </script>
