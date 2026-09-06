@@ -20,7 +20,14 @@
         <img src="dru.png" class="cover-navbar"/>
         <div class="div-navbar">
             <img src="logo.jpg" class="img-navbar"/>
-            <ul class="ul-navbar">
+            <!-- tambahan button -->
+            <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- tambahan button -->
+            <ul class="ul-navbar" id="navLinks">
                 <li class="li-navbar">
                     <a href="index.html" class="a-navbar">Home</a>
                 </li>
@@ -29,6 +36,9 @@
                 </li>
                 <li class="li-navbar">
                     <a href="contactus.html" class="a-navbar">Contact Us</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="activities.html" class="a-navbar">Activities</a>
                 </li>
             </ul>
             <p class="p-navbar">
@@ -44,19 +54,16 @@
     <!-- NAVBAR MINI -->
      <div class="div-navbar-mini">
         <ul class="ul-navbar-mini">
-                <li class="li-navbar-mini">
-                    <a href="#tentang-kami" class="a-navbar-mini">About Us</a>
-                </li>
-                <li class="li-navbar-mini">
-                    <a href="#visi-misi" class="a-navbar-mini">Vision/Mission</a>
-                </li>
-                <li class="li-navbar-mini">
-                    <a href="#layanan-jasa" class="a-navbar-mini">Services</a>
-                </li>
-					 <li class="li-navbar-mini">
-                    <a href="#activities" class="a-navbar-mini">Activities</a>
-                </li>
-            </ul>
+            <li class="li-navbar-mini">
+                <a href="#tentang-kami" class="a-navbar-mini">About Us</a>
+            </li>
+            <li class="li-navbar-mini">
+                <a href="#visi-misi" class="a-navbar-mini">Vision/Mission</a>
+            </li>
+            <li class="li-navbar-mini">
+                <a href="#layanan-jasa" class="a-navbar-mini">Services</a>
+            </li>
+        </ul>
      </div>
     <!-- NAVBAR MINI END -->
 
@@ -214,38 +221,7 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <div class="activities">
-            <h2 class="j-content" id="activities">Activites</h2>
-            <br> 
-            
-            <div class="card-activities">
-                <a href="planning.html" class="p-card-activities">
-                    <img src="cover-activities-1.jpg" class="img-activities"/>
-                    <h3>Planning</h3>
-                    <p>
-                        Engineering planning and design solutions for buildings, infrastructure, and other construction projects.
-                    </p>
-                </a>
-                <a href="assessment.html" class="p-card-activities">
-                    <img src="cover-activities-2.jpg" class="img-activities"/>
-                    <h3>Assessment</h3>
-                    <p>
-                        Structural assessment and evaluation services to support safety, performance, and reliability.
-                    </p>
-                </a>
-                <a href="liscensing.html" class="p-card-activities">
-                    <img src="cover-activities-3.jpg" class="img-activities"/>
-                    <h3>Licensing</h3>
-                    <p>
-                        Professional assistance in construction permits and regulatory documentation.
-                    </p>
-                </a>
-            </div>
-        </div>
     </div>
-    
     <!-- CONTENT END -->
 
     <!-- FOOTER -->
@@ -266,6 +242,11 @@
     document.querySelectorAll('.p-content, .j-content, .p-jasa-content, .p-team-content, .p-card-activities').forEach(el => {
         observer.observe(el);
     });
+
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('active');
+        document.getElementById('hamburgerBtn').classList.toggle('active');
+    }
 </script>
 
 </body>
