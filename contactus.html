@@ -19,7 +19,15 @@
         <img src="dru.png" class="cover-navbar"/>
         <div class="div-navbar">
             <img src="logo.jpg" class="img-navbar"/>
-            <ul class="ul-navbar">
+            <!-- tambahan button -->
+            <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- tambahan button -->
+             <!-- tambahan id=navLinks -->
+                <ul class="ul-navbar" id="navLinks">
                 <li class="li-navbar">
                     <a href="index.html" class="a-navbar">Home</a>
                 </li>
@@ -28,6 +36,9 @@
                 </li>
                 <li class="li-navbar">
                     <a href="contactus.html" class="a-navbar">Contact Us</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="activities.html" class="a-navbar">Activities</a>
                 </li>
             </ul>
             <p class="p-navbar">
@@ -126,6 +137,11 @@
     document.querySelectorAll('.waktu-content, .alamat-content, .sosial-content').forEach(el => {
         observer.observe(el);
     });
+
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('active');
+        document.getElementById('hamburgerBtn').classList.toggle('active');
+    }
 </script>
 
 </body>
